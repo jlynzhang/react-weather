@@ -5,6 +5,7 @@ import WeatherSearch from "./WeatherSearch";
 function App() {
   return (
     <div className="App">
+      <h1>React Weather App</h1>
       <WeatherSearch />
     </div>
   );
