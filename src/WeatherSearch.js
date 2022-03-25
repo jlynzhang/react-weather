@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./App.css";
 
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
@@ -32,7 +31,7 @@ export default function WeatherSearch() {
   }
 
   let form = (
-    <form onSubmit={handleSubmit}>
+    <form autoComplete="off" onSubmit={handleSubmit}>
       <input type="search" placeholder="Type a city..." onChange={updateCity} />
       <input type="submit" />
     </form>
@@ -40,7 +39,7 @@ export default function WeatherSearch() {
 
   if (loaded) {
     return (
-      <div>
+      <div className="App">
         {form}
         <ul>
           <li>Temperature: {Math.round(weather.temperature)}°F </li>

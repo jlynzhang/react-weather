@@ -1,3 +1,18 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+}
+
+.App h1,
+footer a {
+  color: rgb(20, 159, 223);
+}
+
+.App ul {
+  list-style: none;
+  padding: 0;
+}
+
+.App footer {
+  margin-top: 50px;
 }
