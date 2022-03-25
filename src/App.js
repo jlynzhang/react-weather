@@ -7,6 +7,16 @@ function App() {
     <div className="App">
       <h1>React Weather App</h1>
       <WeatherSearch />
+      <footer>
+        Open sourced on{" "}
+        <a
+          href="https://github.com/jlynzhang/react-weather"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>{" "}
+      </footer>
     </div>
   );
 }
